@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "H-1B Sponsorship Checker",
+  "version": "1.0",
+  "description": "Check if companies on job listings sponsor H-1B visas.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.linkedin.com/*", "https://*.glassdoor.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["h1b_sponsors.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
