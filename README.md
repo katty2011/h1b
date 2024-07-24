@@ -1,4 +1,4 @@
-# H-1B Sponsorship Checker
+# Sponsorship Checker
 
 ## Overview
 The H-1B Sponsorship Checker is a Chrome extension designed to assist job seekers in quickly identifying companies that sponsor H-1B visas. It enhances job listing pages on platforms like LinkedIn and Glassdoor by adding visual indicators next to company names, providing instant insight into their H-1B sponsorship status.
